@@ -169,6 +169,17 @@
       </outcoming>
     </target>
   </flows>
+  <flows intent="//@intents.0">
+    <target actions="//@actions.0 //@actions.1 //@actions.3">
+      <outcoming intent="//@intents.1">
+        <target actions="//@actions.0 //@actions.1 //@actions.3">
+		  <outcoming intent="//@intents.1">
+			<target actions="//@actions.5"/>
+		  </outcoming>
+		</target>
+      </outcoming>
+    </target>
+  </flows>
   <flows intent="//@intents.2">
     <target actions="//@actions.4"/>
   </flows>
